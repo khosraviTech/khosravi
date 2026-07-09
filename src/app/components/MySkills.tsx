@@ -28,7 +28,7 @@ const tools: tool[] = [
   { name: "Git", logoSrc: "/toolLogo/git-icon.svg" },
   { name: "GitHub", logoSrc: "/toolLogo/github-icon.svg" },
   { name: "VS Code", logoSrc: "/toolLogo/vsCode-icon.svg" },
-  { name: "Ubuntu", logoSrc: "/toolLogo/Ubuntu-color-icon.svg" },
+  { name: "Ubuntu", logoSrc: "/toolLogo/ubuntu-color-icon.svg" },
   { name: "Redux ToolKit", logoSrc: "/toolLogo/redux-icon.svg" },
 ];
 // type trait = {
