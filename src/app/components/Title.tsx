@@ -17,7 +17,7 @@ export default function Title() {
             width={300}
             height={300}
             alt="Picture of Amir Mohammad Khosravi"
-            className=""
+            className="w-75 h-75 rounded-full"
           />
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function Title() {
       <div className="grid-cols-1 lg:col-span-7 flex flex-col justify-center gap-4">
         <h3 className="text-xl text-accent-green">👋 Hi, I&apos;m</h3>
 
-        <h1 className="text-6xl text-primary leading-tight xl:whitespace-nowrap">
+        <h1 className="text-6xl text-primary leading-tight max-md:whitespace-nowrap">
           Amir Mohammad
         </h1>
 

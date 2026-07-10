@@ -10,7 +10,7 @@ import GetInTouch from "./components/GetInTouch";
 export default function Home() {
   return (
     <>
-      <div className="grid  lg:grid-cols-12  lg:gap-4 gap-5   p-3">
+      <div className="grid  lg:grid-cols-12  lg:gap-4 gap-5 p-3 ">
         <div className=" col-span-1    lg:col-span-8">
           <Title />
         </div>
