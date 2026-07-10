@@ -4,11 +4,10 @@ import Image from "next/image";
 import { ArrowRight, Download } from "lucide-react";
 
 export default function Title() {
-
   return (
-
-    <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 p-6 border-2 border-[#B7B0A8] shadow-xl rounded-2xl bg-bg-card">
-      
+    <div
+      className=" grid grid-cols-1 lg:grid-cols-12 lg:gap-6 p-6 border-2 border-[#B7B0A8] shadow-xl rounded-2xl bg-bg-card h-full"
+    >
       {/* Image */}
       <div className="grid-cols-1  lg:col-span-5 flex items-center justify-center">
         <div className="w-75 h-75 rounded-full overflow-hidden border shadow-lg">
@@ -24,13 +23,17 @@ export default function Title() {
 
       {/* Content */}
       <div className="grid-cols-1 lg:col-span-7 flex flex-col justify-center gap-4">
-        <h3 className="text-xl text-accent-green">👋 Hi, I&apos;m</h3>
+        <h3 className="text-xl text-accent-green font-semibold">
+          👋 Hi, I&apos;m
+        </h3>
 
-        <h1 className="text-6xl text-primary leading-tight max-md:whitespace-nowrap">
+        <h1 className="text-6xl text-[#000080] leading-tight max-md:whitespace-nowrap font-medium">
           Amir Mohammad
         </h1>
 
-        <h1 className="text-6xl text-warning-orange leading-tight">Khosravi</h1>
+        <h1 className="text-6xl text-warning-orange leading-tight font-medium">
+          Khosravi
+        </h1>
 
         <h3 className="text-2xl text-accent-green font-medium inline-flex leading-0 items-center gap-4">
           {/* <span className="font-bold text-[#57cc99] ">|</span>  */}
@@ -50,7 +53,7 @@ export default function Title() {
         </p>
 
         <div className="flex gap-4 pt-2">
-        <button className="cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl bg-[#48acf0] text-black rounded-full font-medium">
+          <button className="cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl hover:bg-[#48acf0]  hover:text-black bg-[#000080] text-white rounded-full font-medium">
             Download CV
             <Download />
           </button>
@@ -62,7 +65,7 @@ export default function Title() {
                 behavior: "smooth",
               });
             }}
-            className=" cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl border-2 border-accent-green rounded-full text-secondary font-medium"
+            className="outline-0 cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl border border-accent-green rounded-full text-secondary font-medium"
           >
             Contact Me
             <ArrowRight className="text-accent-green" />

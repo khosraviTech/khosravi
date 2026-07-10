@@ -53,7 +53,7 @@ export default function CurrentFocus() {
 
       {/* Currently Learning */}
       <div className="col-span-5">
-        <h2 className="text-accent-green text-2xl mb-6">
+        <h2 className="text-accent-green text-2xl mb-6 font-medium">
           Currently Learning
         </h2>
 
@@ -73,7 +73,7 @@ export default function CurrentFocus() {
 
       {/* Future Interests */}
       <div className="col-span-6">
-        <h2 className="text-accent-green text-2xl mb-6">
+        <h2 className="text-accent-green text-2xl mb-6 font-medium">
           Future Interests
         </h2>
 

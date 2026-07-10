@@ -71,9 +71,9 @@ export default function Projects() {
               {/*project  demo Link */}
               <Link
                 href={project.address}
-                className=" hover:bg-[#57cc99] border-2 hover:border-[#57cc99]   col-span-6 rounded-xl inline-flex items-center gap-2 justify-between p-4 m-2"
+                className=" hover:bg-[#57cc99] border-2 hover:border-[#57cc99]   col-span-6 rounded-xl inline-flex items-center gap-2 justify-between p-4 m-2 font-medium"
               >
-                Demo <MonitorPlay className="scale-120" />
+               Live Demo <MonitorPlay className="scale-120" />
               </Link>
 
 
@@ -81,7 +81,7 @@ export default function Projects() {
               {/* project github link */}
               <Link
                 href={project.gitHubAddress}
-                className="hover:bg-[#57cc99] border-2 hover:border-[#57cc99] col-span-6 rounded-xl inline-flex items-center gap-2 justify-between p-4 m-2 "
+                className="hover:bg-[#57cc99] border-2 hover:border-[#57cc99] col-span-6 rounded-xl inline-flex items-center gap-2 justify-between p-4 m-2 font-medium"
               >
                 GitHub
                 <Image
