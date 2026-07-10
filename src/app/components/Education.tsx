@@ -4,7 +4,7 @@ import { Calendar } from "lucide-react";
 
 export default function Education() {
   return (
-    <div className="h-full grid grid-cols-6 border-2 shadow-xl rounded-2xl p-6 bg-bg-card">
+    <div className="h-full grid grid-cols-6 border-2 border-[#B7B0A8]  shadow-xl rounded-2xl p-6 bg-bg-card">
       {/* title & icon */}
       <div className="col-span-12 mb-3 text-3xl inline-flex items-center gap-5 leading-tight">
         <GraduationCap className="scale-200 text-accent-green" />

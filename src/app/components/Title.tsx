@@ -7,7 +7,7 @@ export default function Title() {
 
   return (
 
-    <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 p-6 border-2 shadow-xl rounded-2xl bg-bg-card">
+    <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-6 p-6 border-2 border-[#B7B0A8] shadow-xl rounded-2xl bg-bg-card">
       
       {/* Image */}
       <div className="grid-cols-1  lg:col-span-5 flex items-center justify-center">
@@ -50,7 +50,7 @@ export default function Title() {
         </p>
 
         <div className="flex gap-4 pt-2">
-          <button className="cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl bg-warning-orange text-black rounded-full">
+        <button className="cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl bg-[#48acf0] text-black rounded-full font-medium">
             Download CV
             <Download />
           </button>
@@ -62,7 +62,7 @@ export default function Title() {
                 behavior: "smooth",
               });
             }}
-            className=" cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl border-2 border-accent-green rounded-full text-secondary"
+            className=" cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl border-2 border-accent-green rounded-full text-secondary font-medium"
           >
             Contact Me
             <ArrowRight className="text-accent-green" />

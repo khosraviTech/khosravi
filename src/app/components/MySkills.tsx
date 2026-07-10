@@ -43,7 +43,7 @@ const tools: tool[] = [
 export default function MySkills() {
 
   return (
-    <div className="h-full grid grid-cols-12 gap-6 p-6 shadow-xl border-2 rounded-2xl bg-bg-card">
+    <div className="h-full grid grid-cols-12 gap-6 p-6 shadow-xl border-2 border-[#B7B0A8]  rounded-2xl bg-bg-card">
       {/*  My Skills Title */}
       <div className="col-span-12 inline-flex items-center gap-5 text-3xl">
         <CodeXml className="scale-150 text-accent-green shrink-0" />
