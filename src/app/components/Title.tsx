@@ -65,10 +65,10 @@ export default function Title() {
                 behavior: "smooth",
               });
             }}
-            className="outline-0 cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl border border-accent-green rounded-full text-secondary font-medium"
+            className="outline-0 cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl border-2 hover:border-[#48acf0] hover:bg-[#48acf0]  hover:text-black  text-secondary rounded-full font-medium"
           >
             Contact Me
-            <ArrowRight className="text-accent-green" />
+            <ArrowRight className="text-[#000080] hover:text-black" />
           </button>
         </div>
       </div>
