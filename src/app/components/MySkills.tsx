@@ -6,7 +6,7 @@ type skill = {
   logoSrc: string;
   level: number;
 };
-const skills: skill[] = [
+const frontEndSkills: skill[] = [
   { name: "HTML", logoSrc: "/skillLogo/html-icon.svg", level: 1 },
   { name: "CSS", logoSrc: "/skillLogo/css-icon.svg", level: 1 },
   { name: "JavaScript", logoSrc: "/skillLogo/javascript-icon.svg", level: 1 },
@@ -18,6 +18,20 @@ const skills: skill[] = [
     logoSrc: "/skillLogo/tailwind-css-icon.svg",
     level: 1,
   },
+  {
+    name: "Redux ToolKit",
+    logoSrc: "/toolLogo/redux-icon.svg",
+    level: 1,
+  },
+   
+
+];
+const backEndSkills: skill[] = [
+  { name: "python", logoSrc: "/skillLogo/python-programming-language-icon.svg", level: 1 },
+  { name: "fastAPI", logoSrc: "/skillLogo/fastapi-icon.svg", level: 1 },
+  { name: "postgreSQL", logoSrc: "/skillLogo/postgresql-icon.svg", level: 1 },
+  { name: "pydantic", logoSrc: "/skillLogo/Pydantic--Streamline-Simple-Icons.svg", level: 1 },
+  { name: "SQLAlchemy",logoSrc:"/skillLogo/Sqlalchemy--Streamline-Simple-Icons.svg",level:1}
 ];
 
 type tool = {
@@ -29,16 +43,9 @@ const tools: tool[] = [
   { name: "GitHub", logoSrc: "/toolLogo/github-icon.svg" },
   { name: "VS Code", logoSrc: "/toolLogo/vsCode-icon.svg" },
   { name: "Ubuntu", logoSrc: "/toolLogo/ubuntu-color-icon.svg" },
-  { name: "Redux ToolKit", logoSrc: "/toolLogo/redux-icon.svg" },
+ 
 ];
-// type trait = {
-//   name: string;
-//   level: number
-// };
-// const professionalTraits: trait[] = [
-//   { name: "Continuous Learning" ,level:80},
-//   { name: "Continuous Learning" ,level:80}
-// ];
+
 
 export default function MySkills() {
 
@@ -52,11 +59,11 @@ export default function MySkills() {
 
       {/* Front-end title */}
       <h2 className="col-span-6 text-3xl text-accent-green ">Front-end</h2>
-      {/* Tools title */}
-      <h2 className="col-span-6 text-3xl text-accent-green">Tools</h2>
+      {/* Back-end title */}
+      <h2 className="col-span-6 text-3xl text-accent-green">Back-end</h2>
        {/* Front-end skills list  */}
       <div className="col-span-5 flex flex-wrap items-center gap-6 mt-3">
-        {skills.map((skill) => (
+        {frontEndSkills.map((skill) => (
           <div
             key={skill.name}
             className="flex flex-col items-center"
@@ -80,14 +87,41 @@ export default function MySkills() {
         <div className="w-px h-70 bg-gray-500"></div>
       </div>
 
+       {/* Back-end skills list  */}
+      <div className="col-span-5 flex flex-wrap items-center gap-6 mt-3">
+        {backEndSkills.map((skill) => (
+          <div
+            key={skill.name}
+            className="flex flex-col items-center"
+          >
+            <Image
+              src={skill.logoSrc}
+              width={60}
+              height={60}
+              alt="skill image"
+              className="p-2"
+              
+            />
+
+            <h3 className="text-xl text-secondary font-medium">{skill.name}</h3>
+          </div>
+        ))}
+      </div>
+{/* Divider line */}
+      <div className=" col-span-12 flex justify-center mt-8">
+        <div className="w-full h-px bg-gray-500"></div>
+      </div>
+       {/* Tools title */}
+      <h2 className="col-span-12 text-3xl text-accent-green">Tools</h2>
+
       {/* Tools list */}
-      <div className="col-span-6 flex flex-wrap items-center gap-6 mt-3 ">
+      <div className="col-span-12 flex flex-wrap items-center gap-12 mt-3 ">
         {tools.map((tool) => (
           <div key={tool.name} className="flex flex-col items-center">
             <Image
               src={tool.logoSrc}
-              width={60}
-              height={60}
+              width={50}
+              height={50}
               alt="an image"
               className="p-2"
             />
@@ -97,10 +131,8 @@ export default function MySkills() {
         ))}
       </div>
 
-      {/* Divider line */}
-      {/* <div className=" row-start-2 row-end-12 col-start-6 col-end-7 flex justify-center mt-8">
-        <div className="w-px h-70 bg-gray-500"></div>
-      </div> */}
+      
+      
 
       {/* Other things... like personal values */}
     </div>
