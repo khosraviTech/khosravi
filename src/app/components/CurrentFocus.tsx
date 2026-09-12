@@ -10,9 +10,9 @@ const currentLearnings: CurrentLearning[] = [
   { name: "React" },
   { name: "Tailwind CSS" },
   { name: "Redux Toolkit" },
-  { name: "RTK Query" },
+  { name: "FastAPI" },
   { name: "TypeScript" },
-  { name: "JavaScript" },
+  { name: "Python" },
 ];
 
 type FutureInterest = {
