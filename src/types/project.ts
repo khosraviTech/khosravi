@@ -5,4 +5,5 @@ export type project = {
     address: string,
     image: string,
     gitHubAddress: string
+    demo:boolean
 }
