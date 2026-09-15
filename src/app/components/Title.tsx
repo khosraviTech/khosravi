@@ -53,7 +53,15 @@ export default function Title() {
         </p>
 
         <div className="flex gap-4 pt-2">
-          <button className="cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl hover:bg-[#48acf0]  hover:text-black bg-[#000080] text-white rounded-full font-medium">
+          <button className="cursor-pointer flex-1 inline-flex items-center 
+          justify-between p-4 text-xl hover:bg-[#48acf0]  hover:text-black bg-[#000080]
+           text-white rounded-full font-medium"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/Resume/Khosravi_resume.pdf";
+              link.download = "Khosravi-CV.pdf";
+              link.click();
+            }}>
             Download CV
             <Download />
           </button>
