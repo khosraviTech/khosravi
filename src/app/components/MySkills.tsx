@@ -84,7 +84,7 @@ export default function MySkills() {
 
       {/* Divider line */}
       <div className=" col-span-1 flex justify-center mt-8">
-        <div className="w-px h-70 bg-gray-500"></div>
+        <div className="w-px h-full bg-gray-500"></div>
       </div>
 
        {/* Back-end skills list  */}
