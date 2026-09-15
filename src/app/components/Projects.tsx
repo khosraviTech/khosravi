@@ -70,29 +70,29 @@ export default function Projects() {
           <h1 className="text-primary text-3xl"> Featured Projects</h1>
         </div>
 
-        <div className=" col-span-12 flex items-center gap-4 p-0 m-0">
+        <div className=" col-span-12 flex items-start gap-4 p-0 m-0">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="w-170 grid grid-cols-12 text-primary bg-bg-card  rounded-3xl p-3 gap-2"
+              className=" grid grid-cols-12 text-primary bg-bg-card  rounded-3xl p-3 gap-2"
             >
               {/* project image */}
               <Image
                 src={project.image}
-                width={400}
-                height={400}
+                width={100}
+                height={100}
                 alt="Picture of the project"
-                className=" col-span-12 rounded-2xl  pl-5 m-0"
+                className="w-100 h-50 col-span-12 rounded-2xl  pl-5 m-0"
               />
               {/* project title */}
-              <h1 className="col-span-12 p-2 text-2xl font-semibold">
+              <h1 className="w-100 col-span-12 p-2 text-2xl font-semibold">
                 {project.title}
               </h1>
               {/* project description */}
-              <h2 className="col-span-12 p-2 font-medium">{project.description}</h2>
+              <h2 className="w-100 col-span-12 p-2 font-medium">{project.description}</h2>
 
               {/* project tags */}
-              <div className="col-span-12 p-2 flex flex-wrap gap-2">
+              <div className=" w-100 col-span-12 p-2 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <div
                     key={tag}
@@ -105,20 +105,14 @@ export default function Projects() {
 
 
               {project.demo === true && (
+                <>
                 <Link
                   href={project.address}
                   className="hover:bg-[#57cc99] border-2 hover:border-[#57cc99] col-span-6 rounded-xl inline-flex items-center gap-2 justify-between p-4 m-2 font-medium"
                 >
                   Live Demo <MonitorPlay className="scale-120" />
                 </Link>
-              )}
-
-
-
-
-
-              {/* project github link */}
-              <Link
+                <Link
                 href={project.gitHubAddress}
                 className="hover:bg-[#57cc99] border-2 hover:border-[#57cc99] col-span-6 rounded-xl inline-flex items-center gap-2 justify-between p-4 m-2 font-medium"
               >
@@ -130,6 +124,34 @@ export default function Projects() {
                   alt="Picture of the project"
                 />
               </Link>
+              </>
+              )}
+
+              {project.demo === false && (
+                
+               
+                <Link
+                href={project.gitHubAddress}
+                className="hover:bg-[#57cc99] border-2 hover:border-[#57cc99] col-span-12 rounded-xl inline-flex items-center gap-2 justify-between p-4 m-2 font-medium"
+              >
+                GitHub
+                <Image
+                  src="/toolLogo/github-icon.svg"
+                  width={30}
+                  height={30}
+                  alt="Picture of the project"
+                />
+              </Link>
+              
+              )}
+              
+
+
+
+
+
+              {/* project github link */}
+              
             </div>
 
           ))}
