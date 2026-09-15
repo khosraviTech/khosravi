@@ -38,6 +38,23 @@ const projects: project[] = [
     gitHubAddress: "https://github.com/khosraviTech/nextkalaAPI",
     demo: false,
   }
+  ,
+  {
+    title: "React TodoList",
+    description:
+      "a todo application created by using react.js & redux-toolkit.",
+    tags: [
+      "HTML",
+      "CSS",
+      "React",
+      "javaScript",
+      "Vite"
+    ],
+    address: "https://khosravi-todo.vercel.app/",
+    image: "/projectImages/TodoList.png",
+    gitHubAddress: "https://github.com/khosraviTech/react-todo-app",
+    demo: true,
+  }
 
 ];
 
