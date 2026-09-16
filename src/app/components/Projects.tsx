@@ -79,8 +79,8 @@ export default function Projects() {
               {/* project image */}
               <Image
                 src={project.image}
-                width={100}
-                height={100}
+                width={700}
+                height={700}
                 alt="Picture of the project"
                 className="w-100 h-50 col-span-12 rounded-2xl  pl-5 m-0"
               />
