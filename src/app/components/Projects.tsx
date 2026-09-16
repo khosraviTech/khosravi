@@ -70,11 +70,11 @@ export default function Projects() {
           <h1 className="text-primary text-3xl"> Featured Projects</h1>
         </div>
 
-        <div className=" col-span-12 flex items-start gap-4 p-0 m-0">
+        <div className=" col-span-12 flex md:items-start gap-4 p-0 m-0 max-sm:flex max-sm:flex-col">
           {projects.map((project) => (
             <div
               key={project.title}
-              className=" grid grid-cols-12 text-primary bg-bg-card  rounded-3xl p-3 gap-2"
+              className=" grid grid-cols-12  text-primary bg-bg-card  rounded-3xl p-3 gap-2"
             >
               {/* project image */}
               <Image
