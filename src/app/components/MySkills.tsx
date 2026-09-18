@@ -26,7 +26,7 @@ const frontEndSkills: skill[] = [
    
 
 ];
-const backEndSkills: skill[] = [
+const Analysis: skill[] = [
   { name: "python", logoSrc: "/skillLogo/python-programming-language-icon.svg", level: 1 },
   { name: "fastAPI", logoSrc: "/skillLogo/fastapi-icon.svg", level: 1 },
   { name: "postgreSQL", logoSrc: "/skillLogo/postgresql-icon.svg", level: 1 },
@@ -59,8 +59,8 @@ export default function MySkills() {
 
       {/* Front-end title */}
       <h2 className="col-span-6 text-3xl text-accent-green ">Front-end</h2>
-      {/* Back-end title */}
-      <h2 className="col-span-6 text-3xl text-accent-green">Back-end</h2>
+      {/* Data analysis title */}
+      <h2 className="col-span-6 text-3xl text-accent-green">Data & BI Analysis</h2>
        {/* Front-end skills list  */}
       <div className="col-span-5 flex flex-wrap items-center gap-6 mt-3">
         {frontEndSkills.map((skill) => (
@@ -89,7 +89,7 @@ export default function MySkills() {
 
        {/* Back-end skills list  */}
       <div className="col-span-5 flex flex-wrap items-center gap-6 mt-3">
-        {backEndSkills.map((skill) => (
+        {Analysis.map((skill) => (
           <div
             key={skill.name}
             className="flex flex-col items-center"
