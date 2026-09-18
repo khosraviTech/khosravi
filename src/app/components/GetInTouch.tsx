@@ -62,7 +62,7 @@ export default function GetInTouch() {
 
 
       {/* Connectino links */}
-      <div className="col-span-8 flex flex-wrap gap-4">
+      <div className="col-span-8 flex max-sm:flex-col flex-wrap gap-4 max-sm:pl-4">
         {connections.map((connection) => (
           <div
             key={connection.name}
@@ -80,7 +80,7 @@ export default function GetInTouch() {
                 {/* name and addres flex-col */}
                 <div className="flex flex-col items-center">
                   <span>{connection.name}</span>
-                  <span className="text-secondary text-sm">
+                  <span className="text-secondary text-sm ">
                     {connection.address}
                   </span>
                 </div>
