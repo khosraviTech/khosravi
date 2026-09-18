@@ -58,9 +58,9 @@ export default function MySkills() {
       </div>
 
       {/* Front-end title */}
-      <h2 className="col-span-6 text-3xl text-accent-green ">Front-end</h2>
+      <h2 className="col-span-6 text-3xl text-[#000080]  font-semibold  ">Front-end</h2>
       {/* Data analysis title */}
-      <h2 className="col-span-6 text-3xl text-accent-green">Data & BI Analysis</h2>
+      <h2 className="col-span-6 text-3xl  font-semibold text-[#000080]">Data & Analytics</h2>
        {/* Front-end skills list  */}
       <div className="col-span-5 flex flex-wrap items-center gap-6 mt-3">
         {frontEndSkills.map((skill) => (
@@ -112,7 +112,7 @@ export default function MySkills() {
         <div className="w-full h-px bg-gray-500"></div>
       </div>
        {/* Tools title */}
-      <h2 className="col-span-12 text-3xl text-accent-green">Tools</h2>
+      <h2 className="col-span-12 text-3xl text-[#000080]  font-semibold ">Tools</h2>
 
       {/* Tools list */}
       <div className="col-span-12 flex flex-wrap items-center gap-12 mt-3 ">

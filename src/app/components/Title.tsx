@@ -27,7 +27,7 @@ export default function Title() {
           👋 Hi, I&apos;m
         </h3>
 
-        <h1 className="text-5xl text-[#000080] leading-tight max-md:whitespace-nowrap font-medium max-sm:text-5xl">
+        <h1 className="text-5xl text-[#000080] leading-tight max-md:whitespace-nowrap font-medium max-sm:text-5xl min-[300px]:max-[441px]:text-4xl ">
           Amir Mohammad
         </h1>
 
