@@ -1,7 +1,7 @@
 import { book } from '@/types/book';
 import { BookOpen } from 'lucide-react';
 import Image from "next/image";
-import Link from "next/link";
+
 const books: book[] = [
     {
         title: "Web Performance Engineering in the Age of AI",
@@ -21,8 +21,6 @@ export default function CurrentlyReading() {
         <>
             <div className="border-2 border-[#B7B0A8]  shadow-xl rounded-3xl p-4 grid grid-cols-12 gap-6 bg-bg-card">
 
-
-
                 <div className="col-span-12 inline-flex items-center gap-4 ml-2">
                     <BookOpen className="text-accent-green scale-150" />
                     <h1 className="text-primary text-3xl">Currently Reading</h1>
@@ -37,8 +35,8 @@ export default function CurrentlyReading() {
                             {/* project image */}
                             <Image
                                 src={book.image}
-                                width={700}
-                                height={700}
+                                width={300}
+                                height={300}
                                 alt="Picture of the project"
                                 className=" max-md:w-full h-50 col-span-12 rounded-2xl  pl-5 m-0"
                             />
