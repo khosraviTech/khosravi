@@ -1,21 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Tangerine:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 @import "tailwindcss";
 
-
 @theme {
-  --color-bg-dark: #F5F2ED;
+  --color-bg-dark: #f5f2ed;
   --color-bg-card: #d6ccc2;
 
   --color-primary: #080708;
   --color-secondary: #393d3f;
-  
 
-  --color-accent-green: #2563EB; /* #2600ff   #000080  #2563EB*/
+  --color-accent-green: #2563eb; /* #2600ff   #000080  #2563EB*/
   --color-warning-orange: #3772ff;
 
-  --color-border: #B7B0A8; /* #B7B0A8   #57634e*/
+  --color-border: #b7b0a8; /* #B7B0A8   #57634e*/
+
+  /* Fonts */
+  --font-vietnam: "Be Vietnam Pro", sans-serif;
+  --font-tangerine: "Tangerine", cursive;
+  --font-sacramento: "Sacramento", cursive;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;

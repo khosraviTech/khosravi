@@ -23,7 +23,7 @@ export default function Education() {
         />
         <h1 className="text-primary text-2xl font-bold">دانشگاه تهران</h1>
         <h1 className="text-secondary text-2xl ">Tehran University</h1>
-        <h1 className="text-accent-green text-3xl ">Computer Engineering</h1>
+        <h1 className="text-accent-green text-3xl font-v ">Computer Engineering</h1>
         
         {/* year  info */}
         <div className="text-3xl inline-flex items-center gap-2 leading-tight">
