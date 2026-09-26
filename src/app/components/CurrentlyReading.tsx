@@ -8,7 +8,7 @@ const books: book[] = [
         description: "Mastering Speed and Quality for AI-Generated Applications",
         tags: ["AI", "frontend", "performance", "react", "engineering"],
         author: "Addy Osmani",
-        image: "/public/books/Web Performance Engineering in the Age of AI.jpg",
+        image: "/books/Web Performance Engineering in the Age of AI.jpg",
         has_epub: false,
         epub_Address: "",
         pdf_address: "/public/books/Web.Performance.Engineering.in.the.Age.of.AI.pdf",
@@ -30,15 +30,15 @@ export default function CurrentlyReading() {
                     {books.map((book) => (
                         <div
                             key={book.title}
-                            className=" grid grid-cols-12  text-primary bg-bg-card  rounded-3xl p-3 gap-2"
+                            className=" grid grid-cols-12  text-primary bg-bg-card   rounded-3xl p-3 gap-2"
                         >
                             {/* project image */}
                             <Image
                                 src={book.image}
-                                width={300}
-                                height={300}
+                                width={200}
+                                height={500}
                                 alt="Picture of the project"
-                                className=" max-md:w-full h-50 col-span-12 rounded-2xl  pl-5 m-0"
+                                className=" max-md:w-full h-50 col-span-12  rounded-2xl  pl-5 m-0"
                             />
                             {/* book title */}
                             <h1 className="w-100 max-md:w-full col-span-12 p-2 text-2xl font-semibold">
