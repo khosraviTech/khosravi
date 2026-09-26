@@ -6,6 +6,7 @@ import CurrentFocus from "./components/CurrentFocus";
 import MySkills from "./components/MySkills";
 import Projects from "./components/Projects";
 import GetInTouch from "./components/GetInTouch";
+import CurrentlyReading from "./components/CurrentlyReading";
 
 export default function Home() {
   return (
@@ -37,6 +38,9 @@ export default function Home() {
 
         <div className=" col-span-1  lg:col-span-12 ">
           <GetInTouch />
+        </div>
+        <div className=" col-span-1  lg:col-span-12 ">
+          <CurrentlyReading />
         </div>
       </div>
     </>
