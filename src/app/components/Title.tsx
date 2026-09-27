@@ -58,7 +58,7 @@ export default function Title() {
            text-white rounded-full font-medium"
             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/Resume/Khosravi_resume.pdf";
+              link.href = "/Resume/Khosravi_resume2.pdf";
               link.download = "Khosravi-CV.pdf";
               link.click();
             }}>
