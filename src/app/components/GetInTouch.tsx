@@ -48,7 +48,7 @@ export default function GetInTouch() {
         <span className=" space-y-3">
           <span className="inline-flex items-center gap-3">
             <AtSign className="scale-130  text-accent-green shrink-0 whitespace-nowrap" />
-            <h1 className=" text-primary ">Get in Touch</h1>
+            <h1 className=" text-primary ">Contact Me</h1>
           </span>
 
           <h3 className="text-secondary text-xl font-medium ">
