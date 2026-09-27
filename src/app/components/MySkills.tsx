@@ -58,7 +58,7 @@ export default function MySkills() {
       </div>
 
       {/* Front-end title */}
-      <h2 className="font-sacramento col-span-6 text-5xl text-[#000080]    ">Front-end</h2>
+      <h2 className="font-sacramento col-span-6 text-5xl text-[#000080]    ">Frontend</h2>
       {/* Data analysis title */}
       <h2 className="font-sacramento col-span-6 text-5xl   text-[#000080]">Data & Analytics</h2>
        {/* Front-end skills list  */}

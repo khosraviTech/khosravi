@@ -44,7 +44,7 @@ export default function Title() {
             alt="Picture of Front-end"
             className="scale-150"
           />
-          Front-End Developer
+          Frontend Developer
         </h3>
 
         <p className="text-xl text-secondary font-medium">
