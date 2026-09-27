@@ -1,4 +1,4 @@
-import React from "react";
+"use client"
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { UserRound } from "lucide-react";
@@ -31,8 +31,17 @@ export default function AboutMe() {
           className="rounded-4xl"
         />
       </div>
-      <button className="cursor-pointer max-lg:col-span-12 lg:col-start-7 lg:col-span-6 text-primary text-sm inline-flex w-full items-center justify-between border-2 pl-4 border-accent-green rounded-2xl p-2">
-  More About Me
+      <button
+      onClick={() => {
+              window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: "smooth",
+              });
+            }}
+       className="cursor-pointer max-lg:col-span-12 lg:col-start-7 lg:col-span-6 text-primary text-sm inline-flex w-full items-center justify-between border-2 pl-4 border-accent-green rounded-2xl p-2"
+      
+      >
+  Favorite books
   <ArrowRight className="scale-90 text-accent-green" />
 </button>
     </div>
