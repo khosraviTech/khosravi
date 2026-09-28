@@ -62,6 +62,10 @@ export default function CurrentlyReading() {
                                     </div>
                                 ))}
                             </div>
+                            {/* download pdf */}
+                            <button className='col-span-12  border-2 rounded-4xl text-center p-2 hover:bg-accent-green hover:text-white hover:border-accent-green'>
+                                Download pdf
+                            </button>
 
 
                         </div>
