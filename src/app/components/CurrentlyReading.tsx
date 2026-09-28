@@ -44,6 +44,10 @@ export default function CurrentlyReading() {
                             <h1 className="w-100 max-md:w-full col-span-12 p-2 text-2xl font-semibold">
                                 {book.title}
                             </h1>
+                            {/* book title */}
+                            <h3 className="w-100 max-md:w-full col-span-12 p-2 text-xl  ">
+                                <span className=' border-[#57cc99] bg-[#57cc99] rounded-r-4xl p-2 pr-3'>{book.author}</span>
+                            </h3>
                             {/* book description */}
                             <h2 className="w-100 max-md:w-full col-span-12 p-2 font-medium">{book.description}</h2>
 
