@@ -38,7 +38,7 @@ export default function CurrentlyReading() {
                                 width={200}
                                 height={500}
                                 alt="Picture of the project"
-                                className=" max-md:w-full h-50 col-span-12  rounded-2xl  pl-5 m-0"
+                                className=" h-50 col-span-12  rounded-2xl  pl-5 m-0"
                             />
                             {/* book title */}
                             <h1 className="w-100 max-md:w-full col-span-12 p-2 text-2xl font-semibold">
