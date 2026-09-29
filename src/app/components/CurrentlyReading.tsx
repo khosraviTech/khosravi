@@ -1,3 +1,4 @@
+"use client"
 import { book } from '@/types/book';
 import { BookOpen } from 'lucide-react';
 import Image from "next/image";
@@ -64,13 +65,16 @@ export default function CurrentlyReading() {
                             </div>
                             {/* download pdf */}
                             <button
-                            onClick={() => {
-              const link = document.createElement("a");
-              link.href = book.pdf_address;
-              link.download =book.title.toString()+".pdf";
-              link.click();
-            }}
-                             className='col-span-12  border-2 rounded-4xl text-center p-2 hover:bg-accent-green hover:text-white hover:border-accent-green'>
+                                className='col-span-12  border-2 rounded-4xl text-center p-2
+                             hover:bg-accent-green hover:text-white hover:border-accent-green'
+
+                                onClick={() => {
+                                    const link = document.createElement("a");
+                                    link.href = book.pdf_address;
+                                    link.download =  "1.pdf";
+                                    link.click();
+                                }}
+                            >
                                 Download pdf
                             </button>
 
