@@ -11,7 +11,7 @@ const books: book[] = [
         image: "/books/Web Performance Engineering in the Age of AI.jpg",
         has_epub: false,
         epub_Address: "",
-        pdf_address: "/public/books/Web.Performance.Engineering.in.the.Age.of.AI.pdf",
+        pdf_address: "/books/Web.Performance.Engineering.in.the.Age.of.AI.pdf",
         status: "Reading"
     }
 ];
@@ -66,8 +66,8 @@ export default function CurrentlyReading() {
                             <button
                             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/books/Web.Performance.Engineering.in.the.Age.of.AI.pdf";
-              link.download = "Web.Performance.Engineering.in.the.Age.of.AI.pdf";
+              link.href = book.pdf_address;
+              link.download =book.title.toString()+".pdf";
               link.click();
             }}
                              className='col-span-12  border-2 rounded-4xl text-center p-2 hover:bg-accent-green hover:text-white hover:border-accent-green'>
