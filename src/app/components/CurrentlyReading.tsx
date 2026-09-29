@@ -71,7 +71,7 @@ export default function CurrentlyReading() {
                                 onClick={() => {
                                     const link = document.createElement("a");
                                     link.href = book.pdf_address;
-                                    link.download =  "1.pdf";
+                                    link.download = book.title.toString() + ".pdf";
                                     link.click();
                                 }}
                             >
