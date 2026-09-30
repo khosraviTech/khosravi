@@ -36,11 +36,12 @@ export default function Home() {
           <Projects />
         </div>
 
-        <div className=" col-span-1  lg:col-span-12 ">
-          <GetInTouch />
-        </div>
+       
         <div className=" col-span-1  lg:col-span-12 ">
           <CurrentlyReading />
+        </div>
+         <div className=" col-span-1  lg:col-span-12 ">
+          <GetInTouch />
         </div>
       </div>
     </>
