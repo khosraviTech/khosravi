@@ -68,10 +68,10 @@ export default function Title() {
 
           <button
             onClick={() => {
-              window.scrollTo({
-                top: document.documentElement.scrollHeight,
-                behavior: "smooth",
-              });
+               document.getElementById("contact-me")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
             }}
             className="outline-0 cursor-pointer flex-1 inline-flex items-center justify-between p-4 text-xl border-2 hover:border-[#48acf0] hover:bg-[#48acf0]  hover:text-black  text-secondary rounded-full font-medium"
           >
