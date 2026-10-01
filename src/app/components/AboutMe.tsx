@@ -33,11 +33,10 @@ export default function AboutMe() {
       </div>
       <button
       onClick={() => {
-              window.scrollTo({
-                top: document.documentElement.scrollHeight,
-                behavior: "smooth",
-              });
-            }}
+               document.getElementById("")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
        className="cursor-pointer max-lg:col-span-12 lg:col-start-7 lg:col-span-6 text-primary text-sm inline-flex w-full items-center justify-between border-2 pl-4 border-accent-green rounded-2xl p-2"
       
       >
