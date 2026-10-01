@@ -32,13 +32,14 @@ export default function AboutMe() {
         />
       </div>
       <button
+       className="cursor-pointer max-lg:col-span-12 lg:col-start-7 lg:col-span-6 text-primary text-sm inline-flex w-full items-center justify-between border-2 pl-4 border-accent-green rounded-2xl p-2"
       onClick={() => {
-               document.getElementById("")?.scrollIntoView({
+               document.getElementById("favorite-books")?.scrollIntoView({
     behavior: "smooth",
     block: "start",
-  });
-       className="cursor-pointer max-lg:col-span-12 lg:col-start-7 lg:col-span-6 text-primary text-sm inline-flex w-full items-center justify-between border-2 pl-4 border-accent-green rounded-2xl p-2"
+  })
       
+      }}
       >
   Favorite books
   <ArrowRight className="scale-90 text-accent-green" />
