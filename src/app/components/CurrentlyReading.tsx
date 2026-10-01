@@ -20,7 +20,8 @@ const books: book[] = [
 export default function CurrentlyReading() {
     return (
         <>
-            <div className="border-2 border-[#B7B0A8]  shadow-xl rounded-3xl p-4 grid grid-cols-12 gap-6 bg-bg-card">
+            <div id="favorite-books"
+            className="border-2 border-[#B7B0A8]  shadow-xl rounded-3xl p-4 grid grid-cols-12 gap-6 bg-bg-card">
 
                 <div className="col-span-12 inline-flex items-center gap-4 ml-2">
                     <BookOpen className="text-accent-green scale-150" />
