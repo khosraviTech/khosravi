@@ -6,7 +6,7 @@ import { UserRound } from "lucide-react";
 export default function AboutMe() {
   return (
     <div className="h-full grid border-2 border-[#B7B0A8]  grid-cols-12 gap-6 p-6 shadow-xl  rounded-2xl min-w-0 bg-bg-card">
-  {/* About Me Title */}
+      {/* About Me Title */}
       <div className="col-span-12 inline-flex items-center gap-4 text-3xl">
         <UserRound className="scale-150 text-accent-green shrink-0" />
         <h1 className="text-primary whitespace-nowrap ">About Me</h1>
@@ -31,19 +31,20 @@ export default function AboutMe() {
           className="rounded-4xl"
         />
       </div>
+      {/* favorite books btn */}
       <button
-       className="cursor-pointer max-lg:col-span-12 lg:col-start-7 lg:col-span-6 text-primary text-sm inline-flex w-full items-center justify-between border-2 pl-4 border-accent-green rounded-2xl p-2"
-      onClick={() => {
-               document.getElementById("favorite-books")?.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  })
-      
-      }}
+        className="cursor-pointer max-lg:col-span-12 lg:col-start-7 lg:col-span-6 text-primary text-sm inline-flex w-full items-center justify-between border-2 pl-4 border-accent-green rounded-2xl p-2"
+        onClick={() => {
+          document.getElementById("favorite-books")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          })
+
+        }}
       >
-  Favorite books
-  <ArrowRight className="scale-90 text-accent-green" />
-</button>
+        Favorite books
+        <ArrowRight className="scale-90 text-accent-green" />
+      </button>
     </div>
   );
 }
