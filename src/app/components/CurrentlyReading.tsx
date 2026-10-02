@@ -40,15 +40,15 @@ export default function CurrentlyReading() {
                                 {/* Project image */}
                                 <Image
                                     src={book.image}
-                                    width={200}
-                                    height={500}
+                                    width={300}
+                                    height={600}
                                     alt="Picture of the project"
                                     className="col-span-12 rounded-2xl pl-5  object-cover"
                                 />
 
                                 {/* Status */}
-                                <h6 className=" absolute bottom-1 left-5 px-3 py-1 rounded-r-xl border bg-white">
-                                    {book.status}
+                                <h6 className="text-emerald-300  text-sm absolute bottom-0 left-5 p-1 pr-3 pl-3 rounded-r-xl border-slate-700 bg-slate-700 border">
+                                   {book.status}
                                 </h6>
 
                             </div>
