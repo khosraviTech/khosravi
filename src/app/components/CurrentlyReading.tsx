@@ -21,7 +21,7 @@ export default function CurrentlyReading() {
     return (
         <>
             <div id="favorite-books"
-            className="border-2 border-[#B7B0A8]  shadow-xl rounded-3xl p-4 grid grid-cols-12 gap-6 bg-bg-card">
+                className="border-2 border-[#B7B0A8]  shadow-xl rounded-3xl p-4 grid grid-cols-12 gap-6 bg-bg-card">
 
                 <div className="col-span-12 inline-flex items-center gap-4 ml-2">
                     <BookOpen className="text-accent-green scale-150" />
@@ -34,19 +34,24 @@ export default function CurrentlyReading() {
                             key={book.title}
                             className=" grid grid-cols-12  text-primary bg-bg-card   rounded-3xl p-3 gap-1"
                         >
-                            {/* project image */}
-                            <Image
-                                src={book.image}
-                                width={200}
-                                height={500}
-                                alt="Picture of the project"
-                                className=" h-50 col-span-12  rounded-2xl  pl-5 m-0"
-                            />
-                            {/* status */}
-                            <h6
-                            className='col-span-12 '
-                            >
-                                {book.status}</h6>
+                            {/* Image wrapper */}
+                            <div className="relative col-span-12">
+
+                                {/* Project image */}
+                                <Image
+                                    src={book.image}
+                                    width={200}
+                                    height={500}
+                                    alt="Picture of the project"
+                                    className="col-span-12 rounded-2xl pl-5  object-cover"
+                                />
+
+                                {/* Status */}
+                                <h6 className=" absolute bottom-1 left-5 px-3 py-1 rounded-r-xl border bg-white">
+                                    {book.status}
+                                </h6>
+
+                            </div>
                             {/* book title */}
                             <h1 className="w-100 max-md:w-full col-span-12 p-2 text-2xl font-semibold">
                                 {book.title}
