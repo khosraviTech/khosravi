@@ -32,7 +32,7 @@ export default function CurrentlyReading() {
                     {books.map((book) => (
                         <div
                             key={book.title}
-                            className=" grid grid-cols-12  text-primary bg-bg-card   rounded-3xl p-3 gap-2"
+                            className=" grid grid-cols-12  text-primary bg-bg-card   rounded-3xl p-3 gap-1"
                         >
                             {/* project image */}
                             <Image
@@ -43,7 +43,10 @@ export default function CurrentlyReading() {
                                 className=" h-50 col-span-12  rounded-2xl  pl-5 m-0"
                             />
                             {/* status */}
-                            <h6>{book.status}</h6>
+                            <h6
+                            className='col-span-12 '
+                            >
+                                {book.status}</h6>
                             {/* book title */}
                             <h1 className="w-100 max-md:w-full col-span-12 p-2 text-2xl font-semibold">
                                 {book.title}
