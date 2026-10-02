@@ -42,11 +42,13 @@ export default function CurrentlyReading() {
                                 alt="Picture of the project"
                                 className=" h-50 col-span-12  rounded-2xl  pl-5 m-0"
                             />
+                            {/* status */}
+                            <h6>{book.status}</h6>
                             {/* book title */}
                             <h1 className="w-100 max-md:w-full col-span-12 p-2 text-2xl font-semibold">
                                 {book.title}
                             </h1>
-                            {/* book title */}
+                            {/* author */}
                             <h3 className="w-100 max-md:w-full col-span-12 p-2 text-xl  ">
                                 <span className=' border-[#57cc99] bg-[#57cc99] rounded-r-4xl p-2 pr-3'>{book.author}</span>
                             </h3>
