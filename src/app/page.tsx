@@ -6,7 +6,8 @@ import CurrentFocus from "./components/CurrentFocus";
 import MySkills from "./components/MySkills";
 import Projects from "./components/Projects";
 import GetInTouch from "./components/GetInTouch";
-import CurrentlyReading from "./components/CurrentlyReading";
+import CurrentlyReading from "./components/Favorites";
+import Favorites from "./components/Favorites";
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
 
        
         <div className=" col-span-1  lg:col-span-12 ">
-          <CurrentlyReading />
+          <Favorites />
         </div>
          <div className=" col-span-1  lg:col-span-12 ">
           <GetInTouch />
