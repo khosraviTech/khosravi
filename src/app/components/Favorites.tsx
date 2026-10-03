@@ -25,7 +25,7 @@ export default function Favorites() {
 
                 <div className="col-span-12 inline-flex items-center gap-4 ml-2">
                     <BookOpen className="text-accent-green scale-150" />
-                    <h1 className="text-primary text-3xl">Currently Reading</h1>
+                    <h1 className="text-primary text-3xl">Favorite Books </h1>
                 </div>
 
                 <div className=" col-span-12 flex md:items-start gap-4 p-0 m-0 max-md:flex max-md:flex-col">
