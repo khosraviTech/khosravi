@@ -17,7 +17,7 @@ const books: book[] = [
     }
 ];
 
-export default function CurrentlyReading() {
+export default function Favorites() {
     return (
         <>
             <div id="favorite-books"
@@ -48,6 +48,7 @@ export default function CurrentlyReading() {
 
                                 {/* Status */}
                                 <h6 className="text-emerald-300  text-sm absolute bottom-0 left-5 p-1 pr-3 pl-3 rounded-r-xl border-slate-700 bg-slate-700 border">
+                                  {/* <CircleSmall /> */}
                                    {book.status}
                                 </h6>
 
